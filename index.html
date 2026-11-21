@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>60秒塔防 · TOWER 60</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%; width: 100%;
+    background: #04060c; overflow: hidden;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+    background: radial-gradient(circle at 50% 42%, #0b1524 0%, #04060c 68%);
+    -webkit-user-select: none; user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #game {
+    display: block;
+    border-radius: 16px;
+    box-shadow:
+      0 0 0 1px rgba(56, 189, 248, .18),
+      0 0 120px rgba(14, 165, 233, .14);
+    cursor: crosshair;
+    touch-action: none;
+  }
+</style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
